@@ -3,7 +3,7 @@ from flask import Flask, jsonify, request, redirect
 from flask_pymongo import PyMongo
 
 app = Flask(__name__)
-app.config["MONGO_URI"] = "mongodb+srv://admin-gokul:hello123@cluster0-oybfo.mongodb.net/DEV?retryWrites=true&w=majority"
+app.config["MONGO_URI"] = "<YOUR_CONNECTION_STRING>"
 mongo = PyMongo(app)
 
 #Configuring collection name we are going to work with
